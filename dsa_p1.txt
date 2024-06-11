@@ -1,0 +1,19 @@
+PROGRAM 1
+-----------
+
+import matplotlib.pyplot as plt
+
+# Data
+hours_spent_studying = [10, 9, 2, 15, 10, 16, 11, 16]
+final_exam_scores = [80, 75, 30, 90, 85, 95, 85, 90]
+
+# Plotting
+plt.figure(figsize=(8, 6))
+plt.plot(hours_spent_studying, final_exam_scores, 'r*-', markersize=10)  # 'r*-' specifies red color, star marker, and line
+plt.title('Effect of Hours Spent Studying on Final Exam Score')
+plt.xlabel('Number of Hours Spent Studying')
+plt.ylabel('Score in the Final Exam (0-100)')
+plt.grid(True)
+plt.show()
+
+
