@@ -4,10 +4,8 @@ PROGRAM 2
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load the dataset
-mtcars = pd.read_csv("/content/sample_data/mtcars.csv")
 
-# Plot histogram
+mtcars = pd.read_csv("/content/sample_data/mtcars.csv")
 plt.figure(figsize=(8, 6))
 plt.hist(mtcars['mpg'], bins=10, color='skyblue', edgecolor='black')
 plt.title('Frequency Distribution of Miles per Gallon (mpg)')
